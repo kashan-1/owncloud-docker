@@ -1,7 +1,11 @@
 # owncloud-docker
 This repository contains owncloud deployment with mysql for docker.
-
-## Commands
+## Commands (New version)
+This command is used to create and deploy complete owncloud and mariaDB containers.
+``` bash
+docker-compose -f docker-compose.new.yml up -d --build 
+```
+## Commands (old version)
 
 This command is used to build and up the docker conainer | first run this command after writing on  `compose-file.yml`
 
@@ -26,7 +30,7 @@ msql -uroot -p
 ``` bash
 create database mydb;
 ```
-This command is used to kill the running container
+This command is used to kill the running container(s)
 ``` bash
 docker-compose down
 ```
